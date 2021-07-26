@@ -37,18 +37,15 @@ public class Main {
         int out = 0;
         try {
             for (int i = 0; i < input.length(); i++) {
-                if (input.charAt(0) == '-') {
-                    negCount++;
-                }
                 if (intList.contains(input.charAt(i))) {
-                    if (i != 0 && input.charAt(i-1) == '-') {
+                    if (i > 0 && input.charAt(i-1) == '-') {
                         negCount++;
                     }
                     out *= 10;
-                    out += input.charAt(i) - '0';
+                    out += input.charAt(i) - 48;
                 }
             }
-
+            
             if (negCount % 2 != 0) {
                 return out * -1;
             } else {
