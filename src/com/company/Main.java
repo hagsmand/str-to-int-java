@@ -27,6 +27,11 @@ public class Main {
 
     }
 
+    /**
+     * Method to collect and return only interger in String
+     * @param input a noisy string that want to collect and return only int
+     * @return an int of collective characters
+     */
     private static int converter(String input) {
         int negCount = 0;
         int out = 0;
