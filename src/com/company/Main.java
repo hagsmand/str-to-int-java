@@ -6,7 +6,7 @@ import java.util.Objects;
 
 public class Main {
 
-    private static List<Character> intList = List.of('1', '1', '2', '3', '4', '5', '6', '7', '8', '9');
+    private static List<Character> intList = List.of('0', '1', '2', '3', '4', '5', '6', '7', '8', '9');
 
     public static void main(String[] args) {
         String c1 = "l2-s3k5s-";
